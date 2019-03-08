@@ -1,4 +1,4 @@
-leetcode java
+leetcode python
 ---
 
 
