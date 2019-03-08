@@ -1,4 +1,4 @@
-leetcode shell
+leetcode java
 ---
 
 
@@ -6,4 +6,4 @@ leetcode shell
 
 |---|---|---|
 |题号|题名|是否解决|
-|192|统计词频|:x:|
+|1|两数之和|:ok:|
