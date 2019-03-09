@@ -1,7 +1,7 @@
 package org.lxg.leetcode.problem;
 
 /**************************
- * @description: Code2
+ * @description: Code2 两数相加
  * @author: xuegangliu
  * @date: 2019/3/7 16:45
  ***************************/

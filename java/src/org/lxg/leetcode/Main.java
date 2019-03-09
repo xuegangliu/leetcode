@@ -1,6 +1,7 @@
 package org.lxg.leetcode;
 
 import org.lxg.leetcode.problem.Code1;
+import org.lxg.leetcode.problem.Code15;
 import org.lxg.leetcode.problem.Code4;
 import org.lxg.leetcode.util.StringTools;
 
@@ -11,11 +12,16 @@ import org.lxg.leetcode.util.StringTools;
  ***************************/
 public class Main {
     public static void main(String[] args) {
-        testCode4();
+        testCode15();
+    }
+
+    public static void testCode15(){
+        Code15.threeSum(new int[] {-1, 0, 1, 2, -1, -4} );
+//        Code15.threeSum(new int[] {0,0,0} );
     }
 
     public static void testCode4(){
-        new Code4().findMedianSortedArrays( new int[]{1,3},new int[]{2} );
+        Code4.findMedianSortedArrays( new int[]{1,3},new int[]{2} );
 //        new Code4().findMedianSortedArrays( new int[]{1,2},new int[]{3,4} );
     }
 
