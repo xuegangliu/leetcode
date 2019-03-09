@@ -1,6 +1,7 @@
 package org.lxg.leetcode;
 
 import org.lxg.leetcode.problem.Code1;
+import org.lxg.leetcode.problem.Code11;
 import org.lxg.leetcode.problem.Code15;
 import org.lxg.leetcode.problem.Code4;
 import org.lxg.leetcode.util.StringTools;
@@ -12,7 +13,11 @@ import org.lxg.leetcode.util.StringTools;
  ***************************/
 public class Main {
     public static void main(String[] args) {
-        testCode15();
+        testCode11();
+    }
+
+    public static void testCode11(){
+        Code11.maxArea(new int[]{1,8,6,2,5,4,8,3,7});
     }
 
     public static void testCode15(){

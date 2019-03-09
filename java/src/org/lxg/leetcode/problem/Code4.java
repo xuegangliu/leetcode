@@ -19,6 +19,7 @@ public class Code4 {
 //    nums1 = [1, 2]
 //    nums2 = [3, 4]
 //    则中位数是 (2 + 3)/2 = 2.5
+    // 时间复杂度 O(n)
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         List<Integer> all = new ArrayList<Integer>();
         int allLen = nums1.length+nums2.length;
