@@ -1,4 +1,4 @@
-package org.lxg.leetcode.problem;
+package org.lxg.leetcode.problem.array;
 
 /**************************
  * @description: Code2 两数相加
@@ -11,7 +11,7 @@ public class Code2 {
 //    原因：342 + 465 = 807
 
 
-    // TODO 未做
+    // TODO 未完成
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
         return null;

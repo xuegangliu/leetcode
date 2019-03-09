@@ -1,7 +1,7 @@
-package org.lxg.leetcode.problem;
+package org.lxg.leetcode.problem.array;
 
 /**************************
- * @description: org.lxg.leetcode.problem.Code1 1. 两数之和
+ * @description: org.lxg.leetcode.problem.array.Code1 1. 两数之和
  * @author: xuegangliu
  * @date: 2019/3/7 14:19
  ***************************/

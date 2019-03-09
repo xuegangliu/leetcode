@@ -1,9 +1,9 @@
 package org.lxg.leetcode;
 
-import org.lxg.leetcode.problem.Code1;
-import org.lxg.leetcode.problem.Code11;
-import org.lxg.leetcode.problem.Code15;
-import org.lxg.leetcode.problem.Code4;
+import org.lxg.leetcode.problem.array.Code1;
+import org.lxg.leetcode.problem.array.Code11;
+import org.lxg.leetcode.problem.array.Code15;
+import org.lxg.leetcode.problem.array.Code4;
 import org.lxg.leetcode.util.StringTools;
 
 /**************************

@@ -1,4 +1,4 @@
-package org.lxg.leetcode.problem;
+package org.lxg.leetcode.problem.array;
 
 import java.util.ArrayList;
 import java.util.Arrays;

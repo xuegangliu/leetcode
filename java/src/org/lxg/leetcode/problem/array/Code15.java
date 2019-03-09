@@ -1,6 +1,5 @@
-package org.lxg.leetcode.problem;
+package org.lxg.leetcode.problem.array;
 
-import java.security.PublicKey;
 import java.util.*;
 
 /**
@@ -16,7 +15,6 @@ public class Code15 {
 //            [-1, 0, 1],
 //            [-1, -1, 2]
 //            ]
-    // TODO 未完成
     public static List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> result = new ArrayList<List<Integer>>();
