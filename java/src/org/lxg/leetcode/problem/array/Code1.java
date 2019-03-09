@@ -1,5 +1,7 @@
 package org.lxg.leetcode.problem.array;
 
+import org.lxg.leetcode.util.StringTools;
+
 /**************************
  * @description: org.lxg.leetcode.problem.array.Code1 1. 两数之和
  * @author: xuegangliu
@@ -27,5 +29,9 @@ public class Code1 {
             }
         }
         return resutl;
+    }
+
+    public static void main(String[] args) {
+        System.out.println( StringTools.getString(Code1.twoSum(new int[]{2, 5, 5, 11},10)));
     }
 }

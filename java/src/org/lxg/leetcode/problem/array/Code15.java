@@ -15,6 +15,7 @@ public class Code15 {
 //            [-1, 0, 1],
 //            [-1, -1, 2]
 //            ]
+    // 时间复杂度 O(n*n/2)
     public static List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> result = new ArrayList<List<Integer>>();
@@ -74,6 +75,11 @@ public class Code15 {
             }
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        Code15.threeSum(new int[] {-1, 0, 1, 2, -1, -4} );
+//        Code15.threeSum(new int[] {0,0,0} );
     }
 
 }

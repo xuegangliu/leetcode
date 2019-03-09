@@ -47,4 +47,9 @@ public class Code4 {
             return new Double( m[allLen/2] );
         }
     }
+
+    public static void main(String[] args) {
+        Code4.findMedianSortedArrays( new int[]{1,3},new int[]{2} );
+//        new Code4().findMedianSortedArrays( new int[]{1,2},new int[]{3,4} );
+    }
 }

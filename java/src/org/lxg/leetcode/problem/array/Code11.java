@@ -9,6 +9,7 @@ package org.lxg.leetcode.problem.array;
 public class Code11 {
 //    输入: [1,8,6,2,5,4,8,3,7]
 //    输出: 49
+    // 时间复杂度 O(n*n)
     public static int maxArea(int[] height) {
         int area=0;
         // 从第一个开始组成的所有容器的值 取最大容器的值
@@ -21,5 +22,9 @@ public class Code11 {
             }
         }
         return area;
+    }
+
+    public static void main(String[] args) {
+        Code11.maxArea(new int[]{1,8,6,2,5,4,8,3,7});
     }
 }
