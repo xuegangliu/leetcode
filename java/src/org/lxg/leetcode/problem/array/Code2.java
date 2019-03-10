@@ -13,7 +13,14 @@ public class Code2 {
 
     // TODO 未完成
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode result = new ListNode(0);//
+        ListNode temp = result;
 
+        int len=0;
+        ListNode t=l1;
+        if(null!=t.next)
+            len++;
+        System.out.println(len);
         return null;
     }
 
@@ -21,5 +28,8 @@ public class Code2 {
         int val;
         ListNode next;
         ListNode(int x) { val = x; }
+    }
+
+    public static void main(String[] args) {
     }
 }
