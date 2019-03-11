@@ -1,4 +1,4 @@
-package org.lxg.leetcode.problem.array;
+package org.lxg.leetcode.problem.array.group100;
 
 /**************************
  * @description: Code2 两数相加

@@ -1,4 +1,4 @@
-package org.lxg.leetcode.problem.array;
+package org.lxg.leetcode.problem.array.group800;
 
 /**
  * @author: xuegangliu

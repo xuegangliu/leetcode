@@ -1,4 +1,4 @@
-package org.lxg.leetcode.problem.array;
+package org.lxg.leetcode.problem.array.group900;
 
 import java.util.Arrays;
 

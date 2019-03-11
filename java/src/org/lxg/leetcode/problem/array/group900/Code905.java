@@ -1,6 +1,4 @@
-package org.lxg.leetcode.problem.array;
-
-import java.util.Arrays;
+package org.lxg.leetcode.problem.array.group900;
 
 /**
  * @author: xuegangliu
