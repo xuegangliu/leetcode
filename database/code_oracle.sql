@@ -13,7 +13,13 @@ update salary s set s.sex=case when s.sex='f' then 'm' when s.sex='m' then 'f' e
 --181. 超过经理收入的员工
 --oracle
 select name Employee from (
-select t.name,t.salary,(select x.Salary from Employee x where x.id=t.ManagerId) par from Employee t where t.ManagerId is not null
+ select t.name,t.salary,(select x.Salary from Employee x where x.id=t.ManagerId) par from Employee t where t.ManagerId is not null
 ) d where d.salary>d.par;
 
+
+--183. 从不订购的客户
+--oracle
+select t.Name Customers from Customers t where t.Id not in (
+ select distinct(o.CustomerId) from Orders o 
+);
 
