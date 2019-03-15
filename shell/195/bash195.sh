@@ -7,6 +7,6 @@
 
 set -ue
 
-cat file.txt|awk 'NR==10'
+cat file195.txt|awk 'NR==10'
 
 

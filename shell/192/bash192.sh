@@ -8,7 +8,7 @@
 set -ue
 
 # 获取内容
-content=`cat words.txt`
+content=`cat file192.txt`
 
 echo $content
 
