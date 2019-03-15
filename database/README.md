@@ -8,6 +8,7 @@ SQL
 |181|超过经理收入的员工|:ok:|oracle|
 |182|查找重复的电子邮箱|:ok:|mysql|
 |183|从不订购的客户|:ok:|oracle|
+|197|上升的温度|:ok:|oracle|
 |595|大的国家|:ok:|mysql|
 |620|有趣的电影|:ok:|oracle|
 |627|交换工资|:ok:|oracle|

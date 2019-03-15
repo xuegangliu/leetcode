@@ -23,3 +23,12 @@ select t.Name Customers from Customers t where t.Id not in (
  select distinct(o.CustomerId) from Orders o 
 );
 
+--197. 上升的温度
+--oracle
+select t.Id
+from Weather t
+      left join Weather s
+                on to_char(t.RecordDate - 1, 'yyyyMMdd') =
+                   to_char(s.RecordDate, 'yyyyMMdd')
+where t.Temperature > s.Temperature;
+
