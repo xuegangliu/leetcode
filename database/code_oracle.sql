@@ -32,3 +32,19 @@ from Weather t
                    to_char(s.RecordDate, 'yyyyMMdd')
 where t.Temperature > s.Temperature;
 
+--596. 超过5名学生的课
+--oracle
+select class from (
+  select class,count(distinct(student)) as nu from courses group by class
+) t where t.nu>=5
+
+--176. 第二高的薪水
+--oracle
+select nvl((
+  select Salary from (
+    select rownum num,s.* from(
+        select Salary from Employee group by Salary order by Salary desc
+      ) s
+    ) where num=2
+  ),null) as SecondHighestSalary
+from dual;
