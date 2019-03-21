@@ -13,4 +13,5 @@ SQL
 |595|大的国家|:ok:|mysql|
 |596|超过5名学生的课|:ok:|oracle|
 |620|有趣的电影|:ok:|oracle|
+|626|换座位|:ok:|oracle|
 |627|交换工资|:ok:|oracle|

@@ -48,3 +48,16 @@ select nvl((
     ) where num=2
   ),null) as SecondHighestSalary
 from dual;
+
+--626. 换座位
+--oracle
+select
+  (
+    case
+      when mod(id,2)=1 and id=(select max(id) from seat) then id
+      when mod(id,2)=1 then id+1
+      else id-1
+      end
+    ) as id,student
+from seat
+order by id asc;
