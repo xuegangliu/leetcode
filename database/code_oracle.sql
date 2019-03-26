@@ -61,3 +61,9 @@ select
     ) as id,student
 from seat
 order by id asc;
+
+--178. 分数排名 TODO 未查询正确
+--oracle
+select Score,
+       (select count(distinct Score) from Scores where Score >=s.Score) Rank
+from Scores s order by Score DESC;
