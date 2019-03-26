@@ -11,14 +11,9 @@ set -ue
 # tr\sort\uniq\awk命令使用
 cat file192.txt|tr ' ' '\n'|tr -s '\n'|sort -|uniq -c|sort -rn|awk '{print$2" "$1}'
 
+#### tr ' ' '\n'  #1.将所有的空格转换为换行符
+#### tr -s '\n'   #2.将重复出现的换行符只保留1个
+#### uniq -c      #3.统计单词出现的次数
+#### sort -rn     #4.对次数进行排序
+#### awk'{print $2" "$1}' #5.按指定位置输出
 
-# 获取内容
-#content=`cat file192.txt`
-#echo $content
-
-#这里是将var中的,替换为空格
-#echo ${content//'  '/ }
-
-#tt=${content//'  '/ }
-
-#echo $tt|awk -F "[: ]+" '{print $1}'
