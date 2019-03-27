@@ -9,60 +9,98 @@
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app"></div>
-  <script>
+<!-- 页面设置导航 -->
+<!--  <nav>
+    <a href="#/">EN</a>
+    <a href="#/zh-cn/">中文</a>
+  </nav>-->
+
+<div id="app"></div>
+<!-- 与el: '#main' 一起使用-->
+<!--<div data-app id="main">加载中</div>-->
+<script>
     window.$docsify = {
-      // homepage: 'README.md',
-      repo: 'https://github.com/xuegangliu/leetcode/',
-      auto2top: true, //当路线改变时，滚动到屏幕的顶部。
-      // coverpage: true, //激活封面功能。如果为true，则会从中加载_coverpage.md。
-      // executeScript: true, //执行页面上的脚本。只解析第一个脚本标记（演示）。如果存在Vue，则默认开启。
-      loadSidebar: true, //_sidebar.md如果为真，则从_sidebar.md文件加载边栏，否则从指定的路径加载。
-      loadNavbar: true,//_navbar.md如果为真，则从_navbar.md文件加载navbar ，否则从指定的路径加载。
-      //loadNavbar: 'nav.md',
-      mergeNavbar: true,//Navbar将在小屏幕上与侧边栏合并。
-      maxLevel: 4,//最大的内容表级别。
-      subMaxLevel: 2,//在自定义边栏中添加目录（TOC）。
-      // ga: 'UA-106147152-1',
-      name: 'leetcode',
-      // alias: {
-      //     '/blog':
-      //         'https//xuegangliu.github.io/blog'
-      // },
-      // search: {
-      //   noData: {
-      //     '/de-de/': 'Keine Ergebnisse!',
-      //     '/zh-cn/': '没有结果!',
-      //     '/': 'No results!'
-      //   },
-      //   paths: 'auto',
-      //   placeholder: {
-      //     '/de-de/': 'Suche',
-      //     '/zh-cn/': '搜索',
-      //     '/': 'Search'
-      //   }
-      // },
-      // formatUpdated: '{MM}/{DD} {HH}:{mm}',
-      // plugins: [
-      //   function(hook, vm) {
-      //     hook.beforeEach(function (html) {
-      //       var url = 'https://github.com/PYfive/docsify/blob/master/' + vm.route.file
-      //       var editHtml = '[:memo: Edit Document](' + url + ')\n'
-      //       return html
-      //         + '\n----\n'
-      //         + 'Last modified {docsify-updated} '
-      //         + editHtml
-      //     })
-      //   }
-      // ]
+        name: 'leetcode',
+        repo: 'https://github.com/xuegangliu/leetcode',
+        // logo: '/_media/icon.png',
+        nameLink: '/',
+        //themeColor: '#3F51B5',
+        // 封面
+        // coverpage: true,
+        // 入口文件改为 /home.md
+        //homepage: 'home.md',
+        // 文档加载路径
+        //basePath: '/path/',
+        // 侧边导航
+        loadSidebar: true,
+        subMaxLevel: 2,
+        autoHeader: true,
+        mergeNavbar: true,
+        formatUpdated: '{YYYY}-{MM}/{DD} {HH}:{mm}',
+        externalLinkTarget: '_self',// default: '_blank'
+        // 切换页面跳到页面头
+        auto2top: true,
+        // 设置导航头
+        loadNavbar: true, // 'nav.md'
+        // el: '#main',
+        // 文件不存在的访问路径
+        // loadSidebar: true,
+        // alias: {
+        //     '/.*/_sidebar.md': '/_sidebar.md'
+        // }
+        notFoundPage: true,
+        ext: '.md',
+        // 完整配置参数
+        search: {
+            maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+            paths: [], // or 'auto'
+            // 支持本地化
+            placeholder: {
+                '/zh-cn/': '搜索',
+                '/': 'Type to search'
+            },
+            // 支持本地化
+            noData: {
+                '/zh-cn/': '找不到结果',
+                '/': 'No Results'
+            },
+            // 搜索标题的最大程级, 1 - 6
+            depth: 2
+        },
+        // ga: 'UA-XXXXX-Y',//谷歌统计
+        disqus: 'shortname',
+        plugins: [
+            function (hook) {
+                var footer = [
+                    '<hr/>',
+                    '<footer>',
+                    '<span><a href="https://github.com/xuegangliu">xuegangliu</a> &copy;2019.</span>',
+                    '<span>Proudly published with <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>',
+                    '</footer>'
+                ].join('')
+                hook.afterEach(function (html) {
+                    return html + footer
+                })
+            },
+            function(hook, vm) {
+                hook.beforeEach(function (html) {
+                    var url = 'https://github.com/htmlsite/reading-notes/master/docs' + vm.route.file
+                    var editHtml = '[📝点击修改文档](' + url + ')\n'
+                    return html
+                        + '\n----\n'
+                        + '最后修改时间: {docsify-updated} '
+                        + editHtml
+                })
+            }
+        ]
     }
-  </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <!--<script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>-->
-  <!--<script src="//unpkg.com/docsify/lib/plugins/ga.min.js"></script>-->
-  <!--<script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>-->
-  <!--<script src="//unpkg.com/prismjs/components/prism-markdown.min.js"></script>-->
-  <!--<script src="//unpkg.com/prismjs/components/prism-nginx.min.js"></script>-->
+</script>
+<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/disqus.min.js"></script>
+<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+<!--<script src="//unpkg.com/docsify/lib/plugins/ga.js"></script>-->
 </body>
 </html>
-
