@@ -1,4 +1,8 @@
-docsify
----
+# leetcode
 
-- [document](https://docsify.js.org/#/zh-cn/)
+<center>
+<img src='_media/dream.jpg' />
+</center>
+
+<p style='float:right'>There is no end,there is no goodbye!</p>
+
