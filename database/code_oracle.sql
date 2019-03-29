@@ -67,3 +67,16 @@ order by id asc;
 select Score,
        (select count(distinct Score) from Scores where Score >=s.Score) Rank
 from Scores s order by Score DESC;
+
+--185. 部门工资前三高的员工
+--oracle
+Select d.Name Department, e.Name Employee, e.Salary
+from Department d, Employee e
+where e.DepartmentId = d.Id and (
+  Select count(distinct Salary) From Employee where DepartmentId=d.Id and Salary > e.Salary
+ )<3
+order by Department;
+
+--601. 体育馆的人流量 TODO 未完成
+--oracle
+
