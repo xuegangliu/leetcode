@@ -47,8 +47,8 @@ public class Code15 {
     // 循环获取三个数 进行匹配  超时
     // 时间复杂度 O(n*n*n)
     public static List<List<Integer>> threeSum1(int[] nums) {
-        List<List<Integer>> result = new ArrayList<>(  );
-        Map<String,String> map = new HashMap<>(  );
+        List<List<Integer>> result = new ArrayList<List<Integer>>(  );
+        Map<String,String> map = new HashMap<String,String>(  );
         for(int i=0;i<nums.length-2;i++){
             for(int j=i+1;j<nums.length-1;j++){
                 for(int k=j+1;k<nums.length;k++){
@@ -64,7 +64,7 @@ public class Code15 {
                         if(map.get( key ).equals( "1" )) {
                             int[] re = new int[]{nums[i],nums[j],nums[k]};
                             Arrays.sort( re );
-                            List<Integer> t = new ArrayList<>(  );
+                            List<Integer> t = new ArrayList<Integer>(  );
                             t.add( re[0] );
                             t.add( re[1] );
                             t.add( re[2] );
