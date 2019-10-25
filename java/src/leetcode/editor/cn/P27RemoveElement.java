@@ -52,7 +52,7 @@ public class P27RemoveElement{
 //        int[] nums=new int[]{0,1,2,2,3,0,4,2};
         int[] nums=new int[]{3,2,2,3};
         int result = solution.removeElement(nums,3);
-        CommonTools.arrayPring(nums,result);
+        CommonTools.printArray(nums,result);
     }
     
 

@@ -30,22 +30,9 @@ public class P2AddTwoNumbers{
         ListNode b=new ListNode(5);
         b.next=new ListNode(6);
         b.next.next=new ListNode(4);
-        printListNode(solution.addTwoNumbers(a,b));
+        CommonTools.printListNode(solution.addTwoNumbers(a,b));
     }
 
-    public static void printListNode(ListNode listNode){
-        ListNode a=listNode;
-        StringBuilder out=new StringBuilder();
-        while (a.next!=null){
-            out.append(a.val).append(" ");
-            a=a.next;
-            if(a.next==null){
-                out.append(a.val);
-            }
-        }
-        System.out.println(out.toString());
-    }
-    
 
 //leetcode submit region begin(Prohibit modification and deletion)
 /**
@@ -78,9 +65,4 @@ class Solution {
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
-}
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x; }
 }

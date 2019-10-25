@@ -11,14 +11,31 @@ package leetcode.editor.cn;
  **/
 public class CommonTools {
 
-    private final static StringBuilder sb=new StringBuilder();
+    private final static StringBuilder out=new StringBuilder();
 
-    public static void arrayPring(int[] nums,int len){
+    public static void printArray(int[] nums,int len){
         for (int i = 0; i < len; i++) {
-            sb.append(nums[i]).append(" ");
+            out.append(nums[i]).append(" ");
         }
-        System.out.println(sb.toString());
+        System.out.println(out.toString());
+    }
+
+    public static void printListNode(ListNode listNode){
+        ListNode a=listNode;
+        while (a.next!=null){
+            out.append(a.val).append(" ");
+            a=a.next;
+            if(a.next==null){
+                out.append(a.val);
+            }
+        }
+        System.out.println(out.toString());
     }
 
 
+}
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) { val = x; }
 }

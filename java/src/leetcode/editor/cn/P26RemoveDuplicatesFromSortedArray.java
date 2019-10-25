@@ -48,15 +48,7 @@ public class P26RemoveDuplicatesFromSortedArray{
 //        int[] nums=new int[]{0,0,0};
 //        int[] nums=new int[]{1,1,2};
 //        int[] nums=new int[]{0,0,1,1,1,2,2,3,3,4};
-        print(nums,solution.removeDuplicates(nums));
-    }
-
-    public static void print(int[] nums,int len){
-        StringBuilder sb=new StringBuilder();
-        for (int i = 0; i < len; i++) {
-            sb.append(nums[i]).append(" ");
-        }
-        System.out.println(sb.toString());
+        CommonTools.printArray(nums,solution.removeDuplicates(nums));
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)

@@ -13,27 +13,14 @@ public class P21MergeTwoSortedLists{
     public static void main(String[] args) {
         Solution solution = new P21MergeTwoSortedLists().new Solution();
         // TO TEST
-        ListNode a=new P21MergeTwoSortedLists().new ListNode(1);
-        a.next=new P21MergeTwoSortedLists().new ListNode(2);
-        a.next.next=new P21MergeTwoSortedLists().new ListNode(4);
-        ListNode b=new P21MergeTwoSortedLists().new ListNode(1);
-        b.next=new P21MergeTwoSortedLists().new ListNode(3);
-        b.next.next=new P21MergeTwoSortedLists().new ListNode(4);
-        printListNode(solution.mergeTwoLists(a,b));
+        ListNode a=new ListNode(1);
+        a.next=new ListNode(2);
+        a.next.next=new ListNode(4);
+        ListNode b=new ListNode(1);
+        b.next=new ListNode(3);
+        b.next.next=new ListNode(4);
+        CommonTools.printListNode(solution.mergeTwoLists(a,b));
     }
-
-    public static void printListNode(ListNode allNode){
-        StringBuilder print = new StringBuilder();
-        while (allNode.next!=null){
-            print.append(allNode.val+" ");
-            allNode=allNode.next;
-            if(allNode.next==null){
-                print.append(allNode.val);
-            }
-        }
-        System.out.println(print.toString());
-    }
-    
 
 //leetcode submit region begin(Prohibit modification and deletion)
 /**
@@ -58,9 +45,9 @@ class Solution {
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x; }
-}
+//class ListNode {
+//    int val;
+//    ListNode next;
+//    ListNode(int x) { val = x; }
+//}
 }
