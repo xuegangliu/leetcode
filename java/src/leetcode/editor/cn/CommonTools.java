@@ -13,8 +13,16 @@ public class CommonTools {
 
     private final static StringBuilder out=new StringBuilder();
 
-    public static void printArray(int[] nums,int len){
+    public static void printArrayByLength(int[] nums,int len){
+        len=nums.length<len?nums.length:len;
         for (int i = 0; i < len; i++) {
+            out.append(nums[i]).append(" ");
+        }
+        System.out.println(out.toString());
+    }
+
+    public static void printArray(int[] nums){
+        for (int i = 0; i < nums.length; i++) {
             out.append(nums[i]).append(" ");
         }
         System.out.println(out.toString());

@@ -33,7 +33,7 @@ public class P66PlusOne{
 //        int[] digits=new int[]{0};
         int[] digits=new int[]{9};
 //        int[] digits=new int[]{4,9,9,9};
-        CommonTools.printArray(solution.plusOne(digits),digits.length+1);
+        CommonTools.printArray(solution.plusOne(digits));
     }
     
 
