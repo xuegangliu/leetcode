@@ -41,31 +41,59 @@
 
 package leetcode.editor.cn;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Stack;
+
 //Java：有效的括号
 public class P20ValidParentheses{
     public static void main(String[] args) {
         Solution solution = new P20ValidParentheses().new Solution();
         // TO TEST
-        System.out.println(solution.isValid("()"));
-        System.out.println(solution.isValid("()[]{}"));
-        System.out.println(solution.isValid("(]"));
-        System.out.println(solution.isValid("([)]"));
-        System.out.println(solution.isValid("{[]}"));
+//        System.out.println(solution.isValid("()"));
+//        System.out.println(solution.isValid("()[]{}"));
+//        System.out.println(solution.isValid("(]"));
+//        System.out.println(solution.isValid("([)]"));
+//        System.out.println(solution.isValid("{[]}"));
+        System.out.println(solution.isValid("(])"));
     }
     
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean isValid(String s) {
-        String t=s;
-        while (t.contains("()") || t.contains("[]") || t.contains("{}")){
-            t=t.replace("()","");
-            t=t.replace("[]","");
-            t=t.replace("{}","");
+        Map left=new HashMap();
+        Map right=new HashMap();
+        left.put('(',1);
+        left.put('[',2);
+        left.put('{',3);
+        right.put(')',1);
+        right.put(']',2);
+        right.put('}',3);
+        Stack stack=new Stack();
+        char[] arrs=s.toCharArray();
+        for (char arr : arrs) {
+            if(left.containsKey(arr)){
+                stack.push(arr);
+            }else if(right.containsKey(arr)){
+                if(!stack.empty() && left.get(stack.peek()).equals(right.get(arr))){
+                    stack.pop();
+                }else{
+                    return false;
+                }
+            }
         }
-        return t.length()>0?false:true;
+        return stack.empty();
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
-
+public boolean isValid1(String s) {
+    String t=s;
+    while (t.contains("()") || t.contains("[]") || t.contains("{}")){
+        t=t.replace("()","");
+        t=t.replace("[]","");
+        t=t.replace("{}","");
+    }
+    return t.length()>0?false:true;
+}
 }
