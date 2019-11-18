@@ -19,9 +19,8 @@
 //你可以假设 nums 的长度≥ k-1 且k ≥ 1。 
 // Related Topics 堆
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.easy;
 
-import java.util.Arrays;
 import java.util.PriorityQueue;
 
 //Java：数据流中的第K大元素
@@ -47,22 +46,21 @@ class KthLargest {
     public KthLargest(int k, int[] nums) {
         this.k = k;
         pq = new PriorityQueue<>(k);
-
         for(int i : nums){//对传进来的int数组遍历
             add(i);
         }
     }
 
     public int add(int val) {
-        if(pq.size() < k)//如果队列中的数量少于K，直接添加入优先队列，优先队列会自动维持小顶堆
+        // 如果队列中的数量少于K，直接添加入优先队列，优先队列会自动维持小顶堆
+        if(pq.size() < k)
             pq.offer(val);
         else{
-            if(pq.peek() < val){//否则队列中的数量大于或者等于K，优先队列中的最小数字小于新的数据，优先队列中的顶堆要被移除，并且添加入新的数据进优先队列
+            // 否则队列中的数量大于或者等于K，优先队列中的最小数字小于新的数据，优先队列中的顶堆要被移除，并且添加入新的数据进优先队列
+            if(pq.peek() < val){
                 pq.poll();
                 pq.offer(val);
-
             }
-
         }
         return pq.peek();//返回当前第K大的数
 
