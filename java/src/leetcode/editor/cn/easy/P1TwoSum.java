@@ -19,9 +19,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**************************
- * @description: 两数之和
- * @author: xuegangliu
- * @date: 2019/3/7 14:19
+ * 两数之和
+ * @author xuegangliu 2019/3/7 14:19
  ***************************/
 public class P1TwoSum{
     public static void main(String[] args) {
