@@ -30,7 +30,7 @@
 // 
 // Related Topics 栈
 
-package leetcode.editor.cn.easy;
+package leetcode.editor.cn.easy.stack;
 
 import leetcode.editor.cn.common.CommonTools;
 

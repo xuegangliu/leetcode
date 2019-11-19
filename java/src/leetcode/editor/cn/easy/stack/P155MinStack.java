@@ -20,7 +20,7 @@
 // 
 // Related Topics 栈 设计
 
-package leetcode.editor.cn.easy;
+package leetcode.editor.cn.easy.stack;
 
 //Java：最小栈
 public class P155MinStack{

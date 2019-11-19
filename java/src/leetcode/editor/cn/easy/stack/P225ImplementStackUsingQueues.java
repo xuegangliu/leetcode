@@ -16,7 +16,7 @@
 // 
 // Related Topics 栈 设计
 
-package leetcode.editor.cn.easy;
+package leetcode.editor.cn.easy.stack;
 
 import java.util.ArrayDeque;
 
