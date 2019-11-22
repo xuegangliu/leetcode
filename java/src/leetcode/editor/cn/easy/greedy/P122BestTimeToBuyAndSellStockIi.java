@@ -28,7 +28,7 @@
 //解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。 
 // Related Topics 贪心算法 数组
 
-package leetcode.editor.cn.easy;
+package leetcode.editor.cn.easy.greedy;
 //Java：买卖股票的最佳时机 II
 public class P122BestTimeToBuyAndSellStockIi{
     public static void main(String[] args) {

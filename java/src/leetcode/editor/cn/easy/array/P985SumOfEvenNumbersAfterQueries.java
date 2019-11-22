@@ -33,7 +33,7 @@
 // 
 // Related Topics 数组
 
-package leetcode.editor.cn.easy;
+package leetcode.editor.cn.easy.array;
 
 import leetcode.editor.cn.common.CommonTools;
 

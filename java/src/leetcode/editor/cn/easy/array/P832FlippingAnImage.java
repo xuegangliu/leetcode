@@ -30,7 +30,7 @@
 // 
 // Related Topics 数组
 
-package leetcode.editor.cn.easy;
+package leetcode.editor.cn.easy.array;
 //Java：翻转图像
 public class P832FlippingAnImage{
     public static void main(String[] args) {

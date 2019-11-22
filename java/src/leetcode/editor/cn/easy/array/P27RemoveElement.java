@@ -43,7 +43,7 @@
 // 
 // Related Topics 数组 双指针
 
-package leetcode.editor.cn.easy;
+package leetcode.editor.cn.easy.array;
 
 import leetcode.editor.cn.common.CommonTools;
 

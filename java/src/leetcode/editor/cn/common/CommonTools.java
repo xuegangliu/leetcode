@@ -1,5 +1,7 @@
 package leetcode.editor.cn.common;
 
+import java.util.List;
+
 /**
  * CommonTools
  * <p>
@@ -36,6 +38,13 @@ public class CommonTools {
             if(a.next==null){
                 out.append(a.val);
             }
+        }
+        System.out.println(out.toString());
+    }
+
+    public static void printListObject(List list){
+        for (int i = 0; i < list.size(); i++) {
+            out.append(list.get(i)+"").append(" ");
         }
         System.out.println(out.toString());
     }

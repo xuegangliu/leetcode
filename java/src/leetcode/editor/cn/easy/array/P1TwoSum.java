@@ -11,7 +11,7 @@
 // 
 // Related Topics 数组 哈希表
 
-package leetcode.editor.cn.easy;
+package leetcode.editor.cn.easy.array;
 
 import leetcode.editor.cn.common.CommonTools;
 

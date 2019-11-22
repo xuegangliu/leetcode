@@ -20,7 +20,7 @@
 // 
 // Related Topics 数组 动态规划
 
-package leetcode.editor.cn.easy;
+package leetcode.editor.cn.easy.array;
 //Java：买卖股票的最佳时机
 public class P121BestTimeToBuyAndSellStock{
     public static void main(String[] args) {

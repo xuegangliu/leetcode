@@ -27,7 +27,7 @@
 // 
 // Related Topics 数组 二分查找
 
-package leetcode.editor.cn.easy;
+package leetcode.editor.cn.easy.array;
 //Java：搜索插入位置
 public class P35SearchInsertPosition{
     public static void main(String[] args) {
