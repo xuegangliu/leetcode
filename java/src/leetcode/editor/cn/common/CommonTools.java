@@ -15,22 +15,24 @@ public class CommonTools {
 
     private final static StringBuilder out=new StringBuilder();
 
-    public static void printArrayByLength(int[] nums,int len){
+    public synchronized static void printArrayByLength(int[] nums,int len){
         len=nums.length<len?nums.length:len;
         for (int i = 0; i < len; i++) {
             out.append(nums[i]).append(" ");
         }
         System.out.println(out.toString());
+        out.delete(0,out.length());
     }
 
-    public static void printArray(int[] nums){
+    public synchronized static void printArray(int[] nums){
         for (int i = 0; i < nums.length; i++) {
             out.append(nums[i]).append(" ");
         }
         System.out.println(out.toString());
+        out.delete(0,out.length());
     }
 
-    public static void printListNode(ListNode listNode){
+    public synchronized static void printListNode(ListNode listNode){
         ListNode a=listNode;
         while (a.next!=null){
             out.append(a.val).append(" ");
@@ -40,13 +42,15 @@ public class CommonTools {
             }
         }
         System.out.println(out.toString());
+        out.delete(0,out.length());
     }
 
-    public static void printListObject(List list){
+    public synchronized static void printListObject(List list){
         for (int i = 0; i < list.size(); i++) {
             out.append(list.get(i)+"").append(" ");
         }
         System.out.println(out.toString());
+        out.delete(0,out.length());
     }
 
 

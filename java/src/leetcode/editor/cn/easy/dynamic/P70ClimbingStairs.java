@@ -21,9 +21,9 @@
 //2.  1 阶 + 2 阶
 //3.  2 阶 + 1 阶
 // 
-// Related Topics 动态规划
+// Related Topics 动态规划[dynamic]
 
-package leetcode.editor.cn.easy;
+package leetcode.editor.cn.easy.dynamic;
 //Java：爬楼梯
 public class P70ClimbingStairs{
     public static void main(String[] args) {

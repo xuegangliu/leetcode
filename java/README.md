@@ -4,6 +4,7 @@ leetcode java
 
 #### 问题组
 
+1. array 数组
 1. bit 位运算
 1. stack 栈运算
 1. heap 堆运算

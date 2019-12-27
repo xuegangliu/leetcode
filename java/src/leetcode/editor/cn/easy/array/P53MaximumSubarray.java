@@ -10,7 +10,7 @@
 // 进阶: 
 //
 // 如果你已经实现复杂度为 O(n) 的解法，尝试使用更为精妙的分治法求解。 
-// Related Topics 数组 分治算法 动态规划
+// Related Topics 数组[array] 分治算法[divide] 动态规划[dynamic]
 
 package leetcode.editor.cn.easy.array;
 //Java：最大子序和
